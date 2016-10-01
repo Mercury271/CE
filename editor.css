@@ -1,0 +1,1187 @@
+/*
+ * Load Character Data
+ */
+.loadOtherCharacter {
+	text-align:center;
+}
+
+.loadOtherCharacter .button {
+        width:100px;
+        height:10px;
+        font-size:12px;
+	background: #d4d4d4; /* Old browsers */
+	background: -moz-linear-gradient(top, #d4d4d4 0%, #989898 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d4d4d4), color-stop(100%,#989898)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #d4d4d4 0%,#989898 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #d4d4d4 0%,#989898 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #d4d4d4 0%,#989898 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #d4d4d4 0%,#989898 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4d4d4', endColorstr='#989898',GradientType=0 ); /* IE6-9 */
+        text-align:center;
+        color:white;
+        border-radius:2px;
+        border: 1px solid #777;
+        cursor:pointer;
+	padding:1px;
+	padding-left:10px;
+	padding-right:10px;
+        margin:10px;
+	float:none;
+}
+
+#charactersheet {
+	display:none;
+}
+
+#loadicon {
+	width:32px;
+	height:32px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:32px;
+	background:url('/util/loadicon.gif');
+}
+
+#goldtitle {
+	float:left;
+	width:50px;
+}
+
+#nettitle {
+	float:left;
+	width:70px;
+}
+
+/*
+ * Column Layout
+ */
+ 
+.leftcolumn {
+	width:320px;
+	margin-right:20px;
+	float:left;
+}
+.rightcolumn {
+	width:320px;
+	float:left;
+}
+.centercolumn {
+	width:320px;
+	margin-right:20px;
+	float:left;
+}
+.doubleleft .centercolumn {
+	margin-right:0px;
+}
+.fullwidth {
+	width:100%;
+	float:right;
+}
+
+.doubleleft {
+	width: 660px;
+	float:left;
+	margin-right:20px;
+}
+
+.doubleright {
+	float:left;
+	width:660px;
+}
+
+.col1, .col2, .col3 {
+	margin-right:12px;
+}
+
+.col1, .col2, .col3, .col4 {
+	width:241px;
+	float:left;
+}
+
+.hr {
+	margin-top:10px;
+	margin-bottom:10px;
+	height:1px;
+	width:100%;
+	background-color:gray;
+	float:left;
+}
+
+h1 {
+	margin:0px;
+	padding:0px;
+	font-size:2em;
+	margin-bottom:15px;
+}
+
+h3 {
+	margin:0px;
+	padding:0px;
+	font-size:1.2em;
+	width:100%;
+	float:left;
+	margin-bottom:10px;
+}
+
+h4 {
+	text-decoration:underline;
+	width:100%;
+	float:left;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.cola h4, .colb h4, .colc h4, .cold h4, .cole h4 {
+	text-decoration:none;
+	text-align:center;
+}
+
+.cola, .colb, .colc, .cold, .cole {
+	width:192px;
+	float:left;
+}
+
+.cola input, .colb input, .colc input, .cold input, .cole input {
+	width:190px;
+	margin-bottom:2px;
+}
+
+.cola select, .colb select, .colc select, .cold select, .cole select {
+	width:190px;
+	height:18px;
+	margin-bottom:2px;
+}
+
+.cola, .colb, .colc, .cold {
+	margin-right:10px;
+}
+
+#beguilerAL3, #beguilerAL7, #beguilerAL11, #beguilerAL15, #beguilerAL19 {
+	width:160px;
+}
+
+.balmarker {
+	width:30px;
+	float:left;
+}
+
+#dragonshamanauras span {
+	width:160px;
+	float:left;
+}
+#dragonshamanauras input {
+	float:right;
+	width:30px;
+}
+
+/**
+ * Generic CSS
+ */
+
+input, select, textarea {
+	border: 1px solid #CCC;
+	padding: 0px;
+	border-radius:2px;
+}
+
+/*
+ * Basic Data Layout (Name, gender, race, etc)
+ */
+
+.chardata {
+	width:80px;
+	height:20px;
+	padding-top:5px;
+	padding-bottom:5px;
+	float:left;
+}
+
+.inputfield {
+	width:230px;
+	margin-top:5px;
+	float:left;
+	padding:0px;
+}
+
+.inputline {
+	width:310px;
+	height:30px;
+	float:left;
+}
+
+input.inputfield {
+	width:222px;
+	padding-left:3px;
+	padding-right:3px;
+}
+
+/*
+  * Character Image Layout
+  */
+  
+#characterimage {
+	width: 300px;
+	height: 300px;
+	background-image: url('/util/no-avatar.jpg');
+	background-size: 300px 300px;
+	background-repeat: no-repeat;
+	float:right;
+	border-radius:2px;
+	border: 1px solid #CCC;
+	margin-bottom:15px;
+}
+
+/*
+ * Ability Scores
+ */
+ 
+.abilitycolumn {
+	width:310px;
+}
+
+.abilityblock {
+	float:left;
+	width:150px;
+	height:34px;
+}
+
+.abilityblock:nth-child(odd) {
+	margin-left:10px;
+}
+
+.abilityname {
+	height:20px;
+	padding-top:5px;
+	padding-bottom:5px;
+	width:82px;
+	float:left;
+}
+
+.abilitybonus {
+	height:20px;
+	margin-top:1px;
+	margin-left:5px;
+	width:20px;
+	float:left;
+}
+
+.abilityinput {
+	margin-top:4px;
+}
+
+/*
+ * Classes Block Layout
+ */
+ 
+#classes {
+	margin-top:-3px;
+	width:660px;
+	border-spacing: 0px 2px;
+}
+
+#classes tr {
+	width:620px;
+	height:27px;
+}
+
+#classes tr:not(:first-child) {
+	cursor:row-resize;
+	background-color:rgba(255,255,255,0.5)
+}
+ 
+#classes tr:not(:first-child) td:first-child {
+	width:250px;
+	border-left:1px solid #CCC;
+	border-top-left-radius:4px;
+	border-bottom-left-radius:4px;
+	padding-left:5px;
+}
+
+#classes tr:not(:first-child) td {
+	border-top:1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+}
+
+#classes tr:not(:first-child) td:last-child {
+	border-right:1px solid #CCC;
+	border-top-right-radius:4px;
+	border-bottom-right-radius:4px;
+}
+ 
+.classfield, .variantfield {
+	width:175px;
+	margin-top:0px;
+	float:left;
+	padding:0px;
+}
+
+.variantfield {
+	height:20px;
+}
+
+.classtitle {
+	width:60px;
+	float:left;
+}
+
+#classes .iconbutton img {
+	margin-top:4px;
+	margin-left:4px;
+	margin-right:4px;
+}
+ 
+/*
+ * Combat Stats
+ */
+
+.combatstatstable {
+	width:150px;
+	float:left;
+}
+
+.combatstatstable tr {
+	padding:0px;
+}
+
+.combatstatstable th {
+	width:100px;
+	text-align:left;
+	font-weight:normal;
+}
+
+.combatstatstable td {
+	width:30px;
+}
+
+/*
+ * Saves
+ */
+
+.savestable {
+	width:150px;
+	float:right;
+}
+
+.savestable tr {
+	padding:0px;
+}
+
+.savestable th {
+	width:100px;
+	text-align:left;
+	font-weight:normal;
+}
+
+.savestable td {
+	width:30px;
+}
+
+/*
+ * Skills
+ */
+ 
+#skillrankdata {
+	font-size:12px;
+	font-weight:normal;	
+}
+
+.skilltable {
+	width:100%;
+	float:left;
+	border-collapse:collapse;
+}
+ 
+.skilltable td {
+	min-width:20px;
+	text-align:center;
+	padding:1px;
+}
+
+.skilltable tr {
+	border: 1px solid #ccc;
+}
+
+.skilltable tr:nth-child(odd):hover {
+	background-color:#B9D3D3;
+}
+.skilltable tr:nth-child(odd) {
+        background-color:lightgray;
+}
+
+.skilltable tr:nth-child(even):hover {
+	background-color:#E1FFFF;
+}
+.skilltable tr:nth-child(even) {
+        background-color:#F0F0F0;
+}
+
+.skilltable .iconbutton {
+	margin-top:4px;
+}
+
+.skilltotalbonus {
+	font-size:16px;
+}
+
+ 
+.skillname {
+	width:165px;
+ 	padding:0px;
+}
+ 
+/*
+ * Feats, Class Abilities, Languages, Carrying Capacity
+ */
+
+#languagesleft {
+	font-size:12px;
+	font-weight:normal;
+	float:right;
+	margin-top:4px;
+}
+ 
+.classabilityfield,  .featfield {
+	 width:210px;
+	 padding:0px;
+ }
+
+
+
+.languagefield {
+	width: 240px;
+	margin-top:6px;
+	margin-bottom:6px;
+	padding:0px;
+}
+ 
+#carryingtable {
+	width:100%;
+}
+
+.datafield {
+	float:right;
+}
+
+/*
+ * Other block
+ */
+ 
+.bigheader {
+	width:1000px;
+	height:20px;
+	padding-left:5px;
+	padding-top:10px;
+	float:left;
+}
+
+.biginputfield {
+	width:988px;
+	height: 100px;
+	font-family:sans-serif;
+	padding:5px;
+	font-size:12px;
+}
+
+.finalbuttons {
+	width:100%;
+	height:35px;
+ }
+
+/*
+ * Buttons
+ */
+.nodeletebutton {
+	width:30px !important;
+	height:30px;
+}
+ 
+.addrowbutton {
+	height:15px;
+	font-size:10px;
+	background: #d4d4d4; /* Old browsers */
+	background: -moz-linear-gradient(top, #d4d4d4 0%, #989898 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d4d4d4), color-stop(100%,#989898)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #d4d4d4 0%,#989898 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #d4d4d4 0%,#989898 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #d4d4d4 0%,#989898 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #d4d4d4 0%,#989898 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4d4d4', endColorstr='#989898',GradientType=0 ); /* IE6-9 */
+	text-align:center;
+	color:white;
+	border-radius:2px;
+	border: 1px solid #777;
+	cursor:pointer;
+	float:right;
+	padding-left:5px;
+	padding-right:5px;
+	font-weight:normal;
+}
+
+.addrowbutton:hover {
+	background: #6ad4d4; /* Old browsers */
+	background: -moz-linear-gradient(top, #6ad4d4 0%, #4c9898 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6ad4d4), color-stop(100%,#4c9898)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #6ad4d4 0%,#4c9898 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #6ad4d4 0%,#4c9898 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #6ad4d4 0%,#4c9898 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #6ad4d4 0%,#4c9898 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6ad4d4', endColorstr='#4c9898',GradientType=0 ); /* IE6-9 */
+}
+
+.button {
+	width:100px;
+	height:20px;
+	font-size:16px;
+	text-align:center;
+	background: #d4d4d4; /* Old browsers */
+	background: -moz-linear-gradient(top, #d4d4d4 0%, #989898 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d4d4d4), color-stop(100%,#989898)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #d4d4d4 0%,#989898 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #d4d4d4 0%,#989898 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #d4d4d4 0%,#989898 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #d4d4d4 0%,#989898 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4d4d4', endColorstr='#989898',GradientType=0 ); /* IE6-9 */
+	color:white;
+	border-radius:2px;
+	border: 1px solid #777;
+	cursor:pointer;
+	padding:5px;
+	float:right;
+	margin:10px;
+}
+ 
+.button:hover {
+	background: #6ad4d4; /* Old browsers */
+	background: -moz-linear-gradient(top, #6ad4d4 0%, #4c9898 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6ad4d4), color-stop(100%,#4c9898)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #6ad4d4 0%,#4c9898 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #6ad4d4 0%,#4c9898 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #6ad4d4 0%,#4c9898 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #6ad4d4 0%,#4c9898 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6ad4d4', endColorstr='#4c9898',GradientType=0 ); /* IE6-9 */
+}
+ 
+.iconbutton img {
+	width:20px;
+	height:20px;
+	padding:2px;
+	background: #d4d4d4; /* Old browsers */
+	background: -moz-linear-gradient(top, #d4d4d4 0%, #989898 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d4d4d4), color-stop(100%,#989898)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #d4d4d4 0%,#989898 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #d4d4d4 0%,#989898 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #d4d4d4 0%,#989898 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #d4d4d4 0%,#989898 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4d4d4', endColorstr='#989898',GradientType=0 ); /* IE6-9 */
+	border: 1px solid #777;
+	border-radius:2px;
+	cursor:pointer;
+}
+
+.iconbutton img:hover {
+	background: #6ad4d4; /* Old browsers */
+	background: -moz-linear-gradient(top, #6ad4d4 0%, #4c9898 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6ad4d4), color-stop(100%,#4c9898)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #6ad4d4 0%,#4c9898 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #6ad4d4 0%,#4c9898 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #6ad4d4 0%,#4c9898 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #6ad4d4 0%,#4c9898 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6ad4d4', endColorstr='#4c9898',GradientType=0 ); /* IE6-9 */
+}
+
+#sanctionedbutton {
+	width:100px;
+	height:20px;
+	font-size:16px;
+	font-weight:normal;
+	text-align:center;
+	background: #d4d4d4; /* Old browsers */
+	background: -moz-linear-gradient(top, #d4d4d4 0%, #989898 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d4d4d4), color-stop(100%,#989898)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #d4d4d4 0%,#989898 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #d4d4d4 0%,#989898 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #d4d4d4 0%,#989898 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #d4d4d4 0%,#989898 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4d4d4', endColorstr='#989898',GradientType=0 ); /* IE6-9 */
+	color:white;
+	border-radius:2px;
+	border: 1px solid #777;
+	cursor:pointer;
+	padding:5px;
+	float:right;
+	margin-right:11px;
+	margin-top:5px;
+}
+ 
+#sanctionedbutton:hover {
+	background: #6ad4d4; /* Old browsers */
+	background: -moz-linear-gradient(top, #6ad4d4 0%, #4c9898 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6ad4d4), color-stop(100%,#4c9898)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #6ad4d4 0%,#4c9898 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #6ad4d4 0%,#4c9898 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #6ad4d4 0%,#4c9898 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #6ad4d4 0%,#4c9898 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6ad4d4', endColorstr='#4c9898',GradientType=0 ); /* IE6-9 */
+}
+
+
+/**
+ * Equipment
+ */
+.equipmentItem {
+	width:480px;
+	height:30px;
+	margin-left:6px;
+	margin-right:6px;
+	margin-top:2px;
+	margin-bottom:2px;
+	float:left;
+	background-color:rgba(255,255,255,0.5);
+	border-radius:2px;
+	border: 1px solid #CCC;
+	cursor:move;
+}
+
+.equipmentItem .iconbutton {
+	float:right;
+	margin:2px;
+}
+
+.itemname {
+	margin-left:6px;
+	margin-top:6px;
+	width:190px;
+}
+
+.itemtype {
+	margin-left:4px;
+	width:90px;
+}
+
+.itemweight, .itemvalue, .itemnumber {
+	margin-left:4px;
+	width:30px;
+	margin-right:3px;
+	text-align:center;
+}
+
+#mount {
+	display: block;
+	position: relative;
+	width:998px;
+	float:left;
+	padding:0px;
+	list-style-type: none;
+	min-height:283px;
+	border: 1px solid #CCC;
+	padding-top:7px;
+	margin-top: 1em;
+	margin-bottom:0px;
+}
+
+#mount:after {
+	content: "";
+	background-image:url("mount2.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: auto 250px;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;  
+}
+
+#owned {
+	display: block;
+	position: relative;
+	width:998px;
+	float:left;
+	padding:0px;
+	list-style-type: none;
+	min-height:283px;
+	border: 1px solid #CCC;
+	padding-top:7px;
+	margin-top: 1em;
+	margin-bottom:0px;
+}
+
+#owned:after {
+	content: "";
+	background-image:url("stored2.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: auto 250px;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;  
+}
+
+#owned li:nth-child(odd):not(:first-child), #mount li:nth-child(odd):not(:first-child) {
+	float:right;
+}
+
+#carried {
+	display: block;
+	position: relative;
+	min-height:283px;
+	width:495px;
+	float:left;
+	border: 1px solid #CCC;
+	min-height:px;
+	padding:0px;
+	margin:0px;
+	list-style-type: none;
+	padding-top:7px;
+	padding-bottom:7px;
+	background-color:transparant;
+}
+
+#carried:after {
+	content: "";
+	background-image:url("carried2.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: auto 250px;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;  
+}
+
+#equiped {
+	display: block;
+	position: relative;
+	min-height:283px;
+	width:495px;
+	float:right;
+	border: 1px solid #CCC;
+	min-height:px;
+	padding:0px;
+	margin:0px;
+	list-style-type: none;
+	padding-top:7px;
+	padding-bottom:7px;
+}
+
+#equiped:after {
+	content: "";
+	background-image:url("equiped2.png");
+	background-size: auto 250px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;  
+}
+
+.equipmenttitle {
+	padding-bottom:8px !important;
+	margin-left:10px;
+	margin-right:10px;
+	width:475px;
+	height:20px;
+	float:left;
+	font-weight:bold;
+}
+
+.equipmenttitle.wide {
+	width:978px;
+}
+
+#equipmentnotes {
+	width:663px;
+	height:344px;
+	padding:5px;
+	float:left;
+}
+
+#equipmentnotesfield {
+	width:675px;
+	float:left;
+	margin-right:15px;
+	margin-top:10px;
+}
+
+.moneyheader {
+	width:310px;
+	height:25px;
+	font-weight:bold;
+	float:left;
+}
+
+#moneyfield {
+	margin-top:10px;
+	width:310px;
+	float:left;
+}
+
+.weektotal {
+	float:right;
+	height:20px;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.jobdata {
+	margin-top:2px;
+	margin-bottom:5px;
+	width:60px;
+	text-align:right;
+	float:left;
+}
+
+.gp {
+	float:left;
+	margin-left:4px;
+}
+
+.totalline {
+	width:70px;
+	float:right;
+}
+
+/**
+ * Special Choices
+ */
+.choice {
+	width:310px;
+	float:left;
+	background-color: rgba(255,255,255,0.5);
+	border: 1px solid #CCC;
+	border-radius:2px;
+	margin-right:10px;
+	margin-bottom:10px;
+}
+
+.choicetable {
+	width:300px;
+}
+
+.choice:nth-child(3n-1) {
+	margin-right:0px;
+}
+
+.choicetable td {
+	width:150px;
+}
+
+.choicetable td:first-child {
+	display:block;
+}
+
+.choicetable td select, .choicetable td input {
+	width:150px;
+}
+
+
+/**
+ * Popups
+ */
+
+.ui-dialog-titlebar-close {
+	background-image: url('close.png') !important;
+	background-repeat:no-repeat !important;
+	background-position:center center !important;
+}
+
+.detailstable {
+	width:270px;
+}
+
+.detailsinput {
+	width:190px;
+	height:30px;
+	margin-right:15px;
+}
+
+.detailsinput input {
+	width:190px;
+}
+
+.detailsvalue {
+	width:30px;
+	height:30px;
+	text-align:center;
+}
+
+.detailsvalue input {
+	width:30px;
+}
+
+.hpnumber {
+	text-align:center;
+	width:20px;
+}
+
+/**
+ * JQuery-UI
+ */
+.ui-spinner {
+	position: relative !important;
+	display: inline-block !important;
+	width:40px !important;
+	height:16px !important;
+	border: 1px solid #CCC !important;
+	border-radius:2px !important;
+	cursor:pointer !important;
+	float:left !important;
+}
+
+.ui-spinner .ui-spinner-button {
+	display:block !important;
+	width:19px !important;
+	height:8px !important;
+	float:right !important;
+	font-size:5px !important;
+	text-align:center !important;
+	padding:0px !important;
+	border-left:1px solid #CCC !important;
+	vertical-align: middle !important;
+    background: #D4D4D4;
+	border-bottom:1px solid #CCC !important;
+}
+
+.ui-spinner .ui-spinner-button:hover {
+	background: #6ad4d4; /* Old browsers */
+	background: -moz-linear-gradient(top, #6ad4d4 0%, #4c9898 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6ad4d4), color-stop(100%,#4c9898)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #6ad4d4 0%,#4c9898 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #6ad4d4 0%,#4c9898 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #6ad4d4 0%,#4c9898 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #6ad4d4 0%,#4c9898 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6ad4d4', endColorstr='#4c9898',GradientType=0 ); /* IE6-9 */
+}
+
+.ui-spinner .ui-spinner-up {
+	height: 8px !important;
+	border-top-right-radius: 0px !important;
+}
+
+.ui-spinner .ui-spinner-up:before {
+	content: "▲";
+}
+
+.ui-spinner .ui-spinner-down {
+	border-top:1px solid #CCC !important;
+	position:relative;
+	height:7px !important;
+	margin-top:-1px;
+}
+.ui-spinner .ui-spinner-down:before {
+	content: "▼";
+}
+
+.ui-spinner .ui-spinner-input {
+	width:20px !important;
+	padding: 0px !important;
+	float:left !important;
+	border-width: 0px !important;
+	text-align:center !important;
+	height:16px !important;
+}
+
+#spellsperdaytable {
+	width:480px;
+	float:left;
+
+}
+
+#spellsperdaytable tr:not(:first-child) th {
+	text-decoration:underline;
+	padding-bottom:5px;
+}
+
+#spellsperdaytable td {
+	text-align:center;
+}
+
+.powerpointstable {
+	float:right;
+	width:240px;
+}
+
+.powerpointstable th {
+	width: 150px;
+}
+
+.powerpointstable td {
+	width: 50px;
+	text-align:center;
+}
+
+.bonusspellstd {
+	width: 100px;
+}
+
+.bonusspellspacer {
+	width:30px;
+	height:16px;
+	float:left;
+}
+
+.bonusspelllevels {
+	left:60px;
+	text-align:center;
+}
+
+#psionicbonuslevels {
+	width:240px;
+	float:left;
+	margin-left:10px;
+	margin-top:20px;
+	border-left:1px solid gray;
+	padding-left:10px;
+}
+#psionicbonuslevels th {
+	text-decoration:underline;
+	padding-bottom:5px;
+}
+#psionicbonuslevels td:first-child {
+	text-align:center;
+}
+
+.placeholder {
+	height:20px;
+	width:192px;
+	float:left;
+}
+
+input.wizardspell {
+	width:150px;
+	margin-top:4px;
+	margin-bottom:8px;
+}
+
+input.wizardspell ~ .iconbutton {
+	float:right;
+}
+
+#attacktable {
+	width:660px;
+	float:left;
+	border-collapse:collapse;
+}
+
+#attacktable td:first-child, .attacktable th:first-child {
+	width:200px;
+}
+#attacktable td:first-child {
+	padding-left:5px;	
+}
+
+#attacktable td:not(:first-child) {
+	text-align:center;
+}
+
+#attacktable tr:nth-child(odd):hover {
+	background-color:#B9D3D3;
+}
+#attacktable tr:nth-child(odd) {
+	background-color:lightgray;
+}
+
+#attacktable tr:nth-child(even):hover {
+	background-color:#E1FFFF;
+}
+#attacktable tr:nth-child(even) {
+	background-color:#F0F0F0;
+}
+
+#attacktable tr {
+	border: 1px solid #ccc;
+}
+
+.notitle {
+	font-weight:normal;
+	font-size:10px;
+	font-style:italic;
+}
+
+.incometable, .expensestable {
+	width:310px;
+}
+
+.incometable input, .incometable select, .expensestable input, .expensestable select {
+	width:130px;
+	float:left;
+}
+
+.incometable td:first-child, .expensestable tr:first-child td:first-child {
+	width:100px;
+}
+
+input#othergpweek, input#dependentsgpweek {
+	width:20px;
+	margin-right:2px;
+	text-align:right;
+}
+
+.incometable tr td:last-child, .expensestable tr td:last-child {
+	text-align:right;
+}
+
+.subspacer {
+	margin-left:20px;
+}
+
+#totaltitle {
+	float:left;
+	width:50px;
+}
+
+#totalvalue {
+	width:80px;
+	text-align:right;
+	float:left;
+}
+
+#lasttitle {
+	margin-left:21px;
+	width:85px;
+	float:left;
+}
+
+#lastprocesseddate {
+	width:65px;
+}
+
+.dependentstitle {
+	float:left;
+	margin-left:5px;
+}
+
+input.bardicsagebonusspell {
+	margin-bottom: 7px;
+}
+
+#comment {
+	width:100%;
+}
+
+#turnTable {
+	float:left;
+}
+
+#turnTable th {
+	text-align:left;
+	width:110px;
+}
+
+#turnTable td {
+	text-align:right;
+	width:75px;
+}
+
+.smallfont {
+	font-size:8px;
+}
